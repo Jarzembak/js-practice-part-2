@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // TODO DONE Declare  a variable to hold the current temperature and assign it the value 60
+    let temperature = 80;
+    // TODO DONE Declare a boolean variable called isRaining
+    let isRaining = false;
+    // pseudocode: 
+    // if temperature is <= 40, wear a heavy jacket
+    // else if <= 60, wear a jacket
+    // else if <= 70, wear a light jacket
+    // else if > 70, “It’s hot out today! No jacket needed!”
+
+    // first part of the assignment:
+    // let message = "";
+    // if (temperature <= 40) {
+    //   message = `It's ${temperature} degrees outside! Wear a heavy jacket. `;
+    // } else if (temperature <= 60) {
+    //   message = `It's ${temperature} degrees outside! Wear a jacket. `;
+    // } else if (temperature <= 70) {
+    //   message = `It's ${temperature} degrees outside! Wear a light jacket. `;
+    // } else if (temperature > 70) {
+    //   message = "It's hot out today! No jacket needed. ";
+    // }
+
+    // TODO DONE if isRaining, “It’s raining, too, so you should bring an umbrella!”
+    // else “No rain today, you can leave the umbrella at home!”
+    // if (isRaining) {
+    //   message = message + "It's raining, too, so you should bring an umbrella!";
+    // } else {
+    //   message = message + "No rain today, you can leave the umbrella at home!";
+    // }
+
+    // Bonus activities
+    // TODO change rain check to ternary operator, else should be changed to “It’s not raining, so no umbrella needed!”
+
+    // change everything to a function that accepts temperature and isRaining parameters, and returns a string
+
+    const weather = (temp, rain) => {
+      let message = ""
+    if (temp <= 40) {
+      message = `It's ${temp} degrees outside! Wear a heavy jacket. `;
+    } else if (temp <= 60) {
+      message = `It's ${temp} degrees outside! Wear a jacket. `;
+    } else if (temp <= 70) {
+      message = `It's ${temp} degrees outside! Wear a light jacket. `;
+    } else if (temp > 70) {
+      message = "It's hot out today! No jacket needed. ";
+    }
+    
+    rain ? message += "It's raining, too, so you should bring an umbrella!" : message += "It's not raining, so no umbrella needed!"
+
+    return message;
+
+    }
+
+    console.log(weather(temperature, isRaining));
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
