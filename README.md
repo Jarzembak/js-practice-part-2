@@ -1,3 +1,4 @@
 # js-practice-part-2
 
-- All js is in a script tag in index.html
+- Jacket assignment is in a script tag in jacket.html
+- Calculator assignment is in a script tag in calculator.html
