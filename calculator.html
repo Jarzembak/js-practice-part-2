@@ -6,10 +6,26 @@
   <title>Document</title>
   <script>
     let userName;
-    let x, y;
-    let mathOp = "";
+    let x = "3";
+    let y = 9;
+    let operator = "blobulate";
+    // if userName is not provided, print "Hello guest!"
     let greeting = userName ? `Hello ${userName}!` : "Hello guest!";
     console.log(greeting);
+    // convert operator strings into actual math operations using conditionals
+    // function takes num1, num2, and operation, returns result
+    let calculate = (num1, num2, operation) => {
+      if (operation === "add") { return num1 + num2; }
+        else if (operation === "subtract") { return num1 - num2; }
+          else if (operation === "multiply") { return num1 * num2; }
+            else if (operation === "divide") { return num1 / num2; }
+              else if (operation === "modulus") { return num1 % num2; }
+                else if (operation === "exponent") { return Math.pow(num1, num2); }
+                  else return `${operation} is an invalid operation`
+    }
+
+    console.log(calculate(x, y, operator))
+
   </script>
 </head>
 <body>
