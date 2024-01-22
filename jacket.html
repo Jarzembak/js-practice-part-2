@@ -52,7 +52,7 @@
       message = "It's hot out today! No jacket needed. ";
     }
     
-    rain ? message += "It's raining, too, so you should bring an umbrella!" : message += "It's not raining, so no umbrella needed!"
+    message += rain ? "It's raining, too, so you should bring an umbrella!" : "It's not raining, so no umbrella needed!"
 
     return message;
 
